@@ -36,15 +36,20 @@ nav ul li a.nav-link:hover {
     background-color: #dddddd;
 }
 
-.selected h2 {
-    border-left: 0.5rem solid #cccccc;
-    padding-left: 1rem;
-}
-
 .selected a.nav-link {
-    border: 2px solid #cccccc;
+    border: 2px solid #008000; /* NAV selected border color */
     border-radius: 5px;
     padding: 0.5rem 1rem;
+}
+
+.selected a.nav-link:hover {
+    background-color: #dddddd;
+    border: 2px solid #008000; /* NAV selected border color */
+}
+
+.selected h2 {
+    border-left: 0.5rem solid #008000; /* Content selected border color */
+    padding-left: 1rem;
 }
 
 main {
