@@ -1,0 +1,75 @@
+/* Reset des marges et padding pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Style du header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Style du menu déroulant */
+nav ul li.dropdown ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li.dropdown:hover ul.submenu {
+    display: block;
+}
+
+nav ul li.dropdown ul.submenu li {
+    display: block;
+}
+
+/* Style du main */
+main {
+    padding: 2em;
+}
+
+main h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+main p {
+    font-size: 1.2em;
+}
