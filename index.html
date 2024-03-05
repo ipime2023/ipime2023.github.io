@@ -1,45 +1,372 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IngéGreen</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1 class="ingegreen">IngéGreen</h1>
-    </header>
-    <nav>
-        <ul id="nav-list">
-            <li class="nav-item" class="selected"><a class="nav-link" href="#accueil">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="#conseils-et-ressources">Conseils et Ressources</a></li>
-            <li class="nav-item nav-selected"><a class="nav-link" href="#formations">Formations</a></li>
-            <li class="nav-item"><a class="nav-link" href="#outils-interactifs">Outils Interactifs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#partage-dexperiences">Partage d'expériences</a></li>
-            <li class="nav-item"><a class="nav-link" href="#equipe">L'Équipe</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="conseils-et-ressources">
-            <h2>Conseils et Ressources</h2>
-            <!-- Content here -->
-        </section>
-        <section id="formations" class="selected">
-            <h2>Formations</h2>
-            <!-- Content here -->
-        </section>
-        <section id="outils-interactifs">
-            <h2>Outils Interactifs</h2>
-            <!-- Content here -->
-        </section>
-        <section id="partage-dexperiences">
-            <h2>Partage d'expériences</h2>
-            <!-- Content here -->
-        </section>
+<!-- based from url=(0029)https://www.reseau-astuce.fr/, edited by LEJUEZ Kévin-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="chrome fr home-view axeptio-widget--open"
+
+  lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IngéGREEN by IPIME 2023</title>
+    <meta name="description" content="Le site des étudiants du Master IME de Poitiers sur la Sobriété numérique dans l'ingénierie pédagogique" />
+    <meta name="keywords" content="Master IME Poitiers, IME Poitiers, Poitiers, Sobriété numérique, écologie, numérique et écologie, énergie, EDF" />
+    <meta name="robots" content="index, follow, all" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IngéGREEN by IPIME 2023" />
+    <meta property="og:site_name" content="IngéGREEN by IPIME 2023" />
+    <meta property="og:description" content="Apprendre la sobriété numérique." />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://ipime2023.github.io" />
+    <meta property="og:image" content="./index_files/Logo.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="./index_files/Icones/favicon.ico" />
+    <link rel="apple-touch-icon" href="./Icones/favicon.ico" />
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="./Icones/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="./Icones/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="./Icones/favicon-96x96.png" />
+    <link rel="icon" type="image/x-icon" sizes="160x160" href="./Icones/favicon-160x160.png" />
+    <link href="./index_files/site-638448048822266792.css" rel="stylesheet" />
+    <link href="./index_files/print-638448048822266792.css" rel="stylesheet" media="print" />
+
+
+    <!--Mise en place Matomo RGPD-->
+    <script async="" src="./index_files/sdk.js.t%C3%A9l%C3%A9charg%C3%A9"></script>
+    <script async="" src="./index_files/matomo.js.t%C3%A9l%C3%A9charg%C3%A9"></script>
+    <script>
+        var _paq = window._paq = window._paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        //requireCookieConsent permet de tracker l'utilisateur sans déposer de cookies
+        _paq.push(['requireCookieConsent']);
+        //Si l'utilisateur n'a pas consenti à Matomo il faut désactiver les heatMaps
+        _paq.push(['HeatmapSessionRecording::disable']);
+        (function () {
+            var u = "https://cityway.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '4']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = '//cdn.matomo.cloud/cityway.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <style type="text/css" id="operaUserStyle"></style>
+    <link rel="stylesheet" type="text/css" href="./index_files/style.css" />
+    <link rel="stylesheet" type="text/css" href="./index_files/css" />
+    <style data-styled="active" data-styled-version="5.3.1">@media (max-width:450px){html.axeptio-widget--open{min-height:100vh !important;overflow:hidden !important;touch-action:none !important;}html.axeptio-widget--open > body{position:fixed !important;width:100% !important;overflow:hidden !important;}html.axeptio-widget--open .ax-website-overlay{top:0 !important;}}.axeptio_mount{z-index:2147483647;position:relative;box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:"Rubik",sans-serif;font-size:1em;line-height:1.5;-webkit-transform:none !important;-ms-transform:none !important;transform:none !important;}.axeptio_mount *,.axeptio_mount *:before,.axeptio_mount *:after{box-sizing:border-box;}.axeptio_mount .modal_reorder_helper{z-index:50000;}.axeptio_mount > div:first-child{-webkit-transform:none !important;-ms-transform:none !important;transform:none !important;}.ax-widget .sr-only,.sr-only-aria{border:0 !important;-webkit-clip:rect(1px,1px,1px,1px) !important;clip:rect(1px,1px,1px,1px) !important;-webkit-clip-path:inset(50%) !important;clip-path:inset(50%) !important;height:1px !important;overflow:hidden !important;padding:0 !important;position:absolute !important;width:1px !important;white-space:nowrap !important;}.ax-widget .sr-only-focusable:focus{-webkit-clip:auto !important;clip:auto !important;-webkit-clip-path:none !important;clip-path:none !important;height:auto !important;margin:auto !important;overflow:visible !important;width:auto !important;white-space:normal !important;}</style>
+    <script type="text/javascript" src="./index_files/Base-accessibility.js.t%C3%A9l%C3%A9charg%C3%A9"></script>
+    <link rel="stylesheet" type="text/css" href="./index_files/css" />
+  </head>
+  <body id="global">
+    
+    <!-- Skiplinks accessibilité -->
+    <div class="sr-only">
+      <h1>IngéGREEN by IPIME 2023</h1>
+    </div>
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header-container container">
+        <!-- Banner avec nom du site et baseline -->
+        <div class="banner hidden-xs clearfix">
+          <svg width="210.1" height="71.3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+
+            class="logo-reseau-astuce">
+            <title>IngéGREEN</title>
+            <defs>
+              <svg id="svg_16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 688.000000 163.000000"
+
+                height="163.000000pt" width="688.000000pt">
+                <g fill="#000000" transform="translate(0.000000,163.000000) scale(0.100000,-0.100000)">
+                  <path d="m3465,1399c-72,-11 -185,-63 -242,-113c-211,-184 -225,-547 -29,-754c118,-125 252,-175 406,-151c87,14 140,39 198,93c67,63 95,123 100,215c5,86 -7,135 -51,209l-31,52l-138,0l-138,0l0,-114l0,-115l52,-3c42,-2 54,-7 56,-22c5,-26 -15,-36 -78,-36c-139,1 -231,106 -217,249c13,121 106,201 236,201c36,0 81,-4 99,-9l32,-10l0,144l0,144l-37,10c-61,15 -154,19 -218,10z"/>
+                  <path d="m100,890l0,-500l145,0l145,0l0,500l0,500l-145,0l-145,0l0,-500z"/>
+                  <path d="m2630,1313c-25,-27 -61,-65 -80,-85l-34,-38l70,0l70,0l90,85l89,84l-80,1l-81,0l-44,-47z"/>
+                  <path d="m849,1130c-61,-10 -117,-40 -166,-90c-87,-86 -103,-155 -103,-447l0,-203l135,0l135,0l0,221c0,133 4,228 10,240c7,13 21,19 45,19c24,0 38,-6 45,-19c6,-12 10,-107 10,-240l0,-221l135,0l135,0l0,203c0,111 -5,231 -10,266c-31,189 -184,301 -371,271z"/>
+                  <path d="m1663,1129c-295,-49 -413,-414 -201,-621c71,-69 179,-97 286,-74l32,8l0,119l0,119l-46,0c-59,0 -82,13 -100,57c-20,46 -10,86 28,118c37,31 95,34 129,6c24,-19 24,-23 27,-223c4,-224 -2,-259 -48,-303c-24,-23 -41,-30 -89,-33c-33,-2 -74,0 -90,6l-31,11l0,-119l0,-119l43,-12c147,-41 315,18 404,143c65,90 76,140 81,360c4,211 -5,300 -39,378c-40,90 -122,151 -235,175c-76,16 -77,16 -151,4z"/>
+                  <path d="m2528,1129c-119,-17 -226,-99 -280,-216c-28,-58 -31,-76 -31,-152c1,-118 26,-184 102,-260c31,-31 77,-67 103,-79c117,-54 269,-46 376,20l32,20l-51,61c-110,132 -96,120 -121,103c-12,-9 -38,-16 -58,-16c-73,0 -114,58 -114,160c0,105 41,160 119,160c44,0 76,-24 90,-67c6,-22 4,-23 -64,-23c-66,0 -71,-2 -77,-23c-3,-13 -4,-41 -2,-63l3,-39l202,-3l203,-2l5,23c10,37 -12,146 -40,203c-15,30 -50,75 -80,103c-85,77 -191,107 -317,90z"/>
+                  <path d="m4260,1130c-69,-12 -114,-34 -160,-80c-82,-82 -100,-162 -100,-457l0,-203l134,0l135,0l3,209c3,192 5,211 23,231c16,17 28,21 62,18l43,-3l0,138c0,101 -3,139 -12,142c-33,10 -87,12 -128,5z"/>
+                  <path d="m4768,1129c-119,-17 -226,-99 -280,-216c-26,-56 -31,-77 -31,-147c-1,-134 49,-237 151,-310c118,-86 303,-93 428,-15l34,20l-72,87c-40,48 -73,89 -74,91c-2,1 -13,-4 -26,-13c-12,-9 -38,-16 -58,-16c-73,0 -114,58 -114,160c0,105 41,160 119,160c44,0 76,-24 90,-67c6,-22 4,-23 -64,-23c-66,0 -71,-2 -77,-23c-3,-13 -4,-41 -2,-63l3,-39l202,-3l203,-2l5,23c10,37 -12,146 -40,203c-15,30 -50,75 -80,103c-85,77 -191,107 -317,90z"/>
+                  <path d="m5598,1129c-119,-17 -226,-99 -280,-216c-26,-56 -31,-77 -31,-147c-1,-134 49,-237 151,-310c118,-86 303,-93 428,-15l34,20l-72,87c-40,48 -73,89 -74,91c-2,1 -13,-4 -26,-13c-12,-9 -38,-16 -58,-16c-73,0 -114,58 -114,160c0,105 41,160 119,160c44,0 76,-24 90,-67c6,-22 4,-23 -64,-23c-66,0 -71,-2 -77,-23c-3,-13 -4,-41 -2,-63l3,-39l202,-3l203,-2l5,23c10,37 -12,146 -40,203c-15,30 -50,75 -80,103c-85,77 -191,107 -317,90z"/>
+                  <path d="m6419,1130c-61,-10 -117,-40 -166,-90c-87,-86 -103,-155 -103,-447l0,-203l135,0l135,0l0,221c0,133 4,228 10,240c7,13 21,19 45,19c24,0 38,-6 45,-19c6,-12 10,-107 10,-240l0,-221l135,0l135,0l0,203c0,111 -5,231 -10,266c-31,189 -184,301 -371,271z"/>
+                </g> </svg> </defs>
+            <g>
+              <title>Logo d'IngéGREEN</title>
+              <use fill="#00ff00" x="-4.265028" y="-2.623041" transform="matrix(0.234465, 0, 0, 0.381237, -2.46413, -10.1145)"
+
+                id="svg_17" xlink:href="#svg_16"/> </g> </svg>
+          <div class="pull-right navbar-help-search">
+            <!-- Aide / Plan du site -->
+            <ul class="nav navbar-nav navbar-help pull-left bold">
+              <li> <a href="https://www.reseau-astuce.fr/fr/aide-et-accessibilite/54">Plan
+                  du site</a> </li>
+              <li><a href="https://www.reseau-astuce.fr/#" data-anchor-to="#footer">L'équipe</a></li>
+              <li> <a href="https://ll.univ-poitiers.fr/masterime/">Master IME
+                  Poitiers<abbr title="Really Simple Syndication"></abbr></a>
+              </li>
+              <!-- Liste des langues disponibles -->
+
+                </ul>
+              </li>
+            </ul>
+            <!-- Recherche -->
+            <div class="navbar-form navbar-search pull-right hidden-xs" data-go-to="navbar-search">
+              <div role="search">
+                <form action="https://www.reseau-astuce.fr/fr/recherche/27" method="GET"
+
+                  id="SearchFormGlobal" novalidate="novalidate"> <label for="KeywordSearchGlobal"
+
+                    class="sr-only">Rechercher</label>
+                  <div class="input-group">  <span class="input-group-btn"><button
+
+                        type="submit" class="btn item-with-img btn btn-primary"><span
+
+                          class="item-text  hide-text-icon">Ok</span></button> </span>
+                  </div>
+                  <!-- /input-group --> <input data-val="true" data-val-required="Le champ Submit est requis."
+
+                    id="submitsearch" name="Submit" value="True" type="hidden" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-default">
+          <!-- Banner Responsive -->
+          <div class="banner hidden-lg hidden-md hidden-sm">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+
+              x="0px" y="0px" viewBox="0 0 210.1 71.3" enable-background="new 0 0 210.1 71.3"
+
+              xml:space="preserve" class="logo-reseau-astuce" width="210" height="71"
+
+              role="img">
+              <title>Réseau Astuce</title>
+              <g>
+                <path fill="#B0105F" d="M38,28.5v33.7c7.3,0,13.8-3.7,13.8-8.2V35.4c0-9.8,10.7-17.4,17.7-17.4c7,0,12.7,0,12.7,0V2.8h9V18h22.3
+		    v20.2c0,1.7,0.8,3.5,2.3,5.3c2,2.3,4.5,3.5,7.6,3.5c2.7,0,5.1-0.9,7.1-2.7c2-1.8,3-3.8,3-6.1V18h9v14.7c0.8-3.4,2.6-6.5,5.3-9.1		    c3.9-3.7,8.3-5.6,13.2-5.6c1.5,0,3.2,0.3,5.1,0.8c1.9,0.6,4,1.5,6.4,2.7v11c-3.5-2.3-6.2-3.9-8.2-4.8c-1.3-0.6-2.3-0.8-3.2-0.8		    c-2.8,0-5.2,1-7.1,3.1c-1.9,2.1-2.9,4.4-2.9,7c0,2.5,0.9,4.8,2.8,6.8c1.9,2,4.3,3,7.2,3c1.3,0,2.5-0.3,3.7-0.8		    c1.6-0.7,4.2-2.3,7.7-4.7v0c0.7-9.7,8.9-17.4,18.8-17.4c10.4,0,18.9,8.5,18.9,18.9v3.9h-28.8v4.7c0,3.7,3.1,9.1,13.2,9.1		    c0.1,0,0.3,0,15.6,0v9h-17.9c-11.6,0-18.3-7.2-19.8-17.1c-2.8,1.5-4.9,2.4-6.3,2.8c-1.4,0.4-3.1,0.5-5.1,0.5		    c-5.3,0-9.8-1.8-13.5-5.4c-2.6-2.5-4.2-5.5-5-8.9v22.1h-9V53.6c-1.4,0.8-2.8,1.4-4.4,1.8c-1.6,0.4-3.4,0.6-5.6,0.6		    c-5.2,0-9.6-1.8-13.4-5.4c-3.8-3.6-5.6-7.7-5.6-12.2V27H91.1v18.6c0,4,4.4,9,13.6,9l0,0v9h-2.5c-15.7,0-20.1-12.4-20.1-18.2V27		    h-7.3c-11.2,0-14,6.2-14,9.1c0,2.9,0,17.4,0,17.4c0,8.7-8.8,17.8-18.6,17.8l-4.2,0h-9.2V61.2C27.5,62,26,62.6,24.5,63
+		    c-1.5,0.4-3.4,0.6-5.5,0.6c-5.3,0-9.8-1.8-13.5-5.4C1.8,54.7,0,50.2,0,44.9c0-5.2,1.9-9.7,5.8-13.5c3.8-3.7,8.2-5.6,13.1-5.6		    c1.9,0,3.7,0.2,5.2,0.7c1.5,0.4,3.1,1.2,4.8,2.3c0-2.8-1.3-5-3.8-6.8c-2.5-1.7-5.7-2.6-9.6-2.6l0-0.1v-8.8h5.2		    C31,10.5,38,20.6,38,28.3 M19,35c-5.4,0-9.9,4.4-9.9,9.9c0,5.4,4.4,9.9,9.9,9.9c5.4,0,9.9-4.4,9.9-9.9C28.9,39.4,24.5,35,19,35z		     M199,37.6c-2.9-4.8-7.8-4.8-7.8-4.8s-5,0-7.8,4.8H199z"/>
+                <path fill="#717271" d="M95,3.3h3.8c1.1,0,1.9,0.1,2.6,0.4c0.7,0.3,1.2,0.6,1.5,1.2c0.4,0.5,0.6,1.1,0.6,1.8c0,0.7-0.2,1.3-0.7,1.9
+		    c-0.4,0.5-1.1,1-2,1.2l3,5.8h-1.3L99.5,10h-3.4v5.6H95V3.3z M96.2,4.3v4.6h2.6c0.6,0,1.3-0.1,1.9-0.3c0.5-0.2,0.8-0.4,1-0.8		    c0.2-0.4,0.4-0.8,0.4-1.3c0-0.7-0.2-1.2-0.7-1.6c-0.5-0.4-1.2-0.6-2.2-0.6H96.2z"/>
+                <path fill="#717271" d="M109,3.3h7.2v1.2h-6v4h4.5v1.2h-4.5v4.7h6.6v1.2H109V3.3z M113.2,0h2.1L112,2.5h-1L113.2,0z"/>
+                <path fill="#717271" d="M122.6,12.1c0.1,0.5,0.3,0.9,0.5,1.1c0.3,0.4,0.7,0.8,1.1,1c0.5,0.3,1,0.4,1.7,0.4c0.9,0,1.6-0.2,2.1-0.7
+		    c0.5-0.5,0.8-1,0.8-1.7c0-0.6-0.2-1.1-0.7-1.5c-0.4-0.3-1.1-0.6-2.2-0.9c-1.5-0.4-2.5-0.9-3.2-1.5c-0.6-0.6-0.9-1.2-0.9-2.1		    c0-0.9,0.3-1.7,1.1-2.3c0.7-0.6,1.6-1,2.8-1c0.7,0,1.4,0.1,2,0.4c0.6,0.3,1.1,0.6,1.5,1.2c0.3,0.4,0.5,0.8,0.7,1.4l-1.2,0.4		    c-0.2-0.7-0.6-1.3-1.1-1.7c-0.5-0.4-1.1-0.6-1.9-0.6c-0.8,0-1.4,0.2-1.8,0.6c-0.5,0.4-0.7,0.9-0.7,1.5c0,0.5,0.2,0.9,0.6,1.3		    c0.4,0.4,1.2,0.7,2.5,1.1c1.5,0.4,2.5,0.9,3.1,1.5c0.6,0.6,0.8,1.3,0.8,2.2c0,1-0.4,1.8-1.2,2.5c-0.8,0.7-1.8,1-3.1,1		    c-0.8,0-1.5-0.2-2.2-0.5c-0.7-0.3-1.2-0.8-1.6-1.3c-0.3-0.4-0.5-0.9-0.7-1.6L122.6,12.1z"/>
+                <polygon fill="#717271" points="135.7,3.3 143,3.3 143,4.4 136.9,4.4 136.9,8.4 141.4,8.4 141.4,9.6 136.9,9.6 136.9,14.3
+		    143.5,14.3 143.5,15.5 135.7,15.5"/>
+                <path fill="#717271" d="M151.5,3.3h1.9l3.9,12.3h-1.2l-1.2-3.8h-5l-1.2,3.8h-1.2L151.5,3.3z M152.4,4.1l-2.1,6.5h4.2L152.4,4.1z"/>
+                <path fill="#717271" d="M161.3,3.3h1.2v8c0,1,0.3,1.8,0.9,2.4c0.6,0.6,1.4,0.9,2.3,0.9c0.8,0,1.4-0.1,1.9-0.4
+		    c0.5-0.3,0.9-0.7,1.1-1.2c0.2-0.5,0.4-1.1,0.4-1.7v-8h1.2v8c0,1.4-0.4,2.5-1.2,3.3c-0.8,0.8-1.9,1.2-3.2,1.2c-1.1,0-2-0.2-2.7-0.7		    c-0.7-0.5-1.2-1-1.5-1.7c-0.3-0.7-0.4-1.3-0.4-1.9V3.3z"/>
+              </g> </svg>
+            <div class="btn-toggle clearfix">
+              <!-- Btn Menu Responsive --> <button class="btn btn-header-rwd btn-header-rwd-menu navbar-toggle navbar-toggle-button"
+
+                type="button" data-toggle="collapse" data-target="#navbar-menu"
+
+                id="ui-collapse-758"> Menu </button>
+              <!-- Btn Espace membre Responsive --> <button type="button" class="btn item-with-img btn-header-rwd navbar-toggle navbar-toggle-button"
+
+                data-toggle="collapse" data-target="#navbar-login" id="ui-collapse-186"><span
+
+                  aria-hidden="true" class="item-img cw-transinfo cw-toolbar-user "></span><span
+
+                  class="item-text  hide-text-icon">Espace membre</span></button>
+              <!-- Btn Boutique Responsive --> <a href=""
+
+                class="item-with-img navbar-toggle btn-header-rwd"><span aria-hidden="true"
+
+                  class="item-img cw-transinfo tcar-icons tcar-caddy "></span><span
+
+                  class="item-text  hide-text-icon">Recharger ma carte Astuce</span></a>
+              <!-- Btn Recherche Responsive --> <button type="button" class="btn item-with-img btn-header-rwd navbar-toggle navbar-toggle-button"
+
+                data-toggle="collapse" data-target="#navbar-search" id="ui-collapse-456"><span
+
+                  aria-hidden="true" class="item-img cw-transinfo cw-toolbar-search "></span><span
+
+                  class="item-text  hide-text-icon">Rechercher</span></button> </div>
+          </div>
+          <!-- Navigation principale desktop -->
+          <nav class="navbar-collapse collapse navbar-menu" id="navbar-menu" role="navigation"
+
+            tabindex="-1">
+            <div class="sr-only">
+              <h2>Menu principal</h2>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="dropdown "> <a class="dropdown-toggle text-uppercase bold"
+
+                  data-toggle="dropdown" href="Informations/index.html" role="button"
+
+                  aria-expanded="false" aria-haspopup="true">Informations &amp;
+                  Ressources<span class="item-img cw-transinfo cw-nav-expand2 hidden-sm hidden-md hidden-lg"
+
+                    aria-hidden="true"></span></a>
+                <ul class="dropdown-menu navbar-sub-nav" role="menu">
+                  <li role="presentation"> <a href="Informations/index.html
+                     role="menuitem" tabindex="-1">Informations</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown "> <a class="dropdown-toggle text-uppercase bold"
+
+                  data-toggle="dropdown" href="Outils/index.html" role="button"
+
+                  aria-expanded="false" aria-haspopup="true">Outils<span class="item-img cw-transinfo cw-nav-expand2 hidden-sm hidden-md hidden-lg"
+
+                    aria-hidden="true"></span></a>
+                <ul class="dropdown-menu navbar-sub-nav" role="menu">
+                  <li role="presentation"> <a href="Outils/index.html"
+                      role="menuitem" tabindex="-1">Outils</a> </li>
+                </ul>
+              </li>
+              <li class="dropdown "> <a class="dropdown-toggle text-uppercase bold"
+
+                  data-toggle="dropdown" href="https://www.reseau-astuce.fr/#" role="button"
+
+                  aria-expanded="false" aria-haspopup="true">Retours
+                  d'expériences<span class="item-img cw-transinfo cw-nav-expand2 hidden-sm hidden-md hidden-lg"
+
+                    aria-hidden="true"></span></a>
+                <ul class="dropdown-menu navbar-sub-nav" role="menu">
+                      role="menuitem" tabindex="-1">Retours d'expériences</a> </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="pull-right">
+              <!-- Accès à la Boutique --><!-- Div accueillant l'espace membre en responsive -->
+            </div>
+          </nav>
+          <br />
+          <div class="navbar-collapse collapse navbar-login" id="navbar-login"></div>
+          <!-- Div accueillant la recherche en responsive -->
+          <div class="navbar-collapse collapse navbar-search" id="navbar-search"
+
+            data-come-from="navbar-search"></div>
+        </div>
+      </div>
+</header>
+    <!-- Contenu -->
+    <div id="sliding-panel-closed" class="sliding-panel-closed hidden-xs"><br />
+    </div>
+    <main class="main" role="main" id="main" tabindex="-1">
+      <!-- Diaporama Bootstrap -->
+      <div class="carousel slide hidden-xs" data-ride="carousel" id="cw-carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" aria-label="Navigation dans le diaporama"
+
+          style="display: none;">
+          <li class="cw-item active" data-target="#cw-carousel" data-slide-to="0"><br />
+          </li>
+          <li class="cw-media play" data-state="play"><i></i><br />
+          </li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item image active" data-interval="3000">
+            <div class="cm_floatLeft"><img src="./index_files/slider-ScenoTDA2.png"
+
+                alt="" /></div>
+          </div>
+        </div>
+        <!-- Controls --> <a class="left carousel-control" href="https://www.reseau-astuce.fr/#"
+
+          role="button" data-slide="prev" data-target="#cw-carousel" style="display: none;">
+          <span class="cw-nav-previous2" aria-hidden="true"></span> <span class="sr-only">Previous</span>
+        </a> <a class="right carousel-control" href="https://www.reseau-astuce.fr/#"
+
+          role="button" data-slide="next" data-target="#cw-carousel" style="display: none;">
+          <span class="cw-nav-next2" aria-hidden="true"></span> <span class="sr-only">Next</span>
+        </a> </div>
+      <div class="main-container container"> <a class="sliding-panel-mobile visible-xs"
+
+          href="https://www.reseau-astuce.fr/fr/info-trafic/17/Disruption">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+
+            x="0px" y="0px" viewBox="0 0 46.1 247.2" enable-background="new 0 0 46.1 247.2"
+
+            xml:space="preserve" class="disruptions-btn" width="48" height="257"
+
+            role="img">
+            <title>Info Trafic</title>
+            <g>
+              <g>
+                <polygon fill="#FFFFFF" points="44,0 27.6,16.4 27.6,32.6 44,16.2"/>
+                <polygon fill="#FFFFFF" points="44,32.5 27.6,48.9 27.6,65.1 44,48.7"/>
+                <polygon fill="#FFFFFF" points="44,64.9 27.6,81.3 27.6,97.6 44,81.2"/>
+                <polygon fill="#FFFFFF" points="44.4,99.6 28,116 28,132.2 44.4,115.8"/>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <path fill="#FFFFFF" d="M2.6,195v-3.2h19.2v3.2H2.6z"/>
+                    <path fill="#FFFFFF" d="M2.6,187.8v-2.9l13.6-10.7H2.6V171h19.2v2.9L8.2,184.6h13.6v3.2H2.6z"/>
+                    <path fill="#FFFFFF" d="M2.6,167.4v-14.3h3.2v11.1h4.8v-8h3.2v8h8v3.2H2.6z"/>
+                    <path fill="#FFFFFF" d="M12.2,152.8c-1.3,0-2.6-0.2-3.7-0.7c-1.2-0.4-2.2-1.1-3-1.8c-0.9-0.8-1.5-1.7-2.1-2.7
+					    c-0.5-1-0.8-2.1-0.8-3.3c0-1.2,0.3-2.3,0.8-3.3c0.5-1,1.2-1.9,2.1-2.7c0.9-0.8,1.9-1.4,3-1.8c1.2-0.4,2.4-0.7,3.7-0.7					    c1.3,0,2.6,0.2,3.7,0.7c1.2,0.4,2.2,1.1,3,1.8c0.9,0.8,1.6,1.7,2.1,2.7c0.5,1,0.8,2.1,0.8,3.3c0,1.2-0.3,2.3-0.8,3.3					    c-0.5,1-1.2,1.9-2.1,2.7c-0.9,0.8-1.9,1.4-3,1.8C14.8,152.6,13.5,152.8,12.2,152.8z M12.2,150.1c0.9,0,1.7-0.1,2.5-0.5					    c0.8-0.3,1.5-0.7,2.1-1.2c0.6-0.5,1.1-1.1,1.4-1.8c0.3-0.7,0.5-1.4,0.5-2.2c0-0.8-0.2-1.5-0.5-2.2c-0.3-0.7-0.8-1.3-1.4-1.8					    c-0.6-0.5-1.3-0.9-2.1-1.2c-0.8-0.3-1.6-0.5-2.5-0.5c-0.9,0-1.7,0.1-2.5,0.5c-0.8,0.3-1.5,0.7-2.1,1.2c-0.6,0.5-1.1,1.1-1.4,1.8					    c-0.3,0.7-0.5,1.5-0.5,2.2c0,0.8,0.2,1.5,0.5,2.2c0.3,0.7,0.8,1.3,1.4,1.8c0.6,0.5,1.3,0.9,2.1,1.2					    C10.4,149.9,11.3,150.1,12.2,150.1z"/>
+                  </g>
+                  <g>
+                    <path fill="#FFFFFF" d="M33.3,193.9v2h-2v-2h-2.4v-2h2.4v-2h2v2H42v2H33.3z"/>
+                    <path fill="#FFFFFF" d="M32.2,186.2c-0.2-0.2-0.4-0.5-0.6-0.9c-0.2-0.3-0.3-0.7-0.4-1.1c-0.1-0.5-0.2-1-0.2-1.6h2
+			        c0,0.7,0.1,1.2,0.4,1.8c0.1,0.2,0.3,0.4,0.4,0.7c0.2,0.2,0.4,0.4,0.7,0.6c0.3,0.2,0.6,0.3,0.9,0.4c0.4,0.1,0.8,0.2,1.2,0.2H42v2			        H31.3v-2H32.2z"/>
+                    <path fill="#FFFFFF" d="M42,172.2h-1.1c0.1,0.1,0.2,0.2,0.4,0.4c0.1,0.2,0.3,0.5,0.4,0.8c0.1,0.3,0.3,0.7,0.4,1.1
+			        c0.1,0.4,0.2,0.9,0.2,1.4c0,0.8-0.1,1.5-0.4,2.2c-0.3,0.7-0.7,1.3-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2c-0.7,0.3-1.4,0.4-2.2,0.4			        c-0.8,0-1.5-0.1-2.2-0.4c-0.7-0.3-1.3-0.7-1.8-1.2c-0.5-0.5-0.9-1.1-1.2-1.8c-0.3-0.7-0.4-1.4-0.4-2.2c0-0.5,0-0.9,0.1-1.3			        c0.1-0.4,0.2-0.7,0.3-1c0.1-0.3,0.3-0.5,0.4-0.8c0.2-0.2,0.3-0.4,0.5-0.6h-1.1v-2H42V172.2z M36.6,179.6c0.5,0,0.9-0.1,1.3-0.3			        c0.4-0.2,0.8-0.5,1.2-0.8c0.3-0.3,0.6-0.7,0.8-1.2c0.2-0.4,0.3-0.9,0.3-1.3c0-0.5-0.1-0.9-0.3-1.3c-0.2-0.4-0.5-0.8-0.8-1.2			        c-0.3-0.3-0.7-0.6-1.2-0.8c-0.4-0.2-0.9-0.3-1.3-0.3c-0.5,0-0.9,0.1-1.3,0.3c-0.4,0.2-0.8,0.5-1.2,0.8c-0.3,0.3-0.6,0.7-0.8,1.2			        c-0.2,0.4-0.3,0.9-0.3,1.3c0,0.5,0.1,0.9,0.3,1.3c0.2,0.4,0.5,0.8,0.8,1.2c0.3,0.3,0.7,0.6,1.2,0.8			        C35.7,179.5,36.2,179.6,36.6,179.6z"/>
+                    <path fill="#FFFFFF" d="M33.3,167.4v2h-2v-2h-1.2c-0.5,0-1-0.1-1.5-0.3c-0.5-0.2-0.9-0.5-1.2-0.8c-0.3-0.4-0.6-0.8-0.8-1.3
+			        c-0.2-0.5-0.3-1-0.3-1.5h2c0,0.3,0,0.5,0.1,0.8c0.1,0.2,0.2,0.4,0.4,0.6c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.2,0.7,0.2h1.2			        v-2h2v2H42v2H33.3z"/>
+                    <path fill="#FFFFFF" d="M29.1,161.3c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7c0-0.3,0.1-0.5,0.3-0.7
+					            c0.2-0.2,0.4-0.3,0.7-0.3s0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.3,0.7C29.6,161.2,29.4,161.3,29.1,161.3z					             M31.3,161.3v-2H42v2H31.3z"/>
+                    <path fill="#FFFFFF" d="M37.6,147.2c0.6,0,1.2,0.1,1.8,0.4c0.6,0.3,1.1,0.7,1.5,1.2c0.4,0.5,0.7,1.1,1,1.8
+			        c0.2,0.7,0.4,1.4,0.4,2.2c0,0.8-0.1,1.5-0.4,2.2c-0.3,0.7-0.7,1.3-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2c-0.7,0.3-1.4,0.4-2.2,0.4			        c-0.8,0-1.5-0.1-2.2-0.4c-0.7-0.3-1.3-0.7-1.8-1.2c-0.5-0.5-0.9-1.1-1.2-1.8c-0.3-0.7-0.4-1.4-0.4-2.2c0-0.8,0.1-1.5,0.4-2.2			        c0.2-0.7,0.6-1.3,1-1.8c0.4-0.5,0.9-0.9,1.5-1.2c0.6-0.3,1.2-0.4,1.8-0.4v2c-0.4,0-0.7,0.1-1,0.3c-0.3,0.2-0.6,0.4-0.8,0.8			        c-0.2,0.3-0.4,0.7-0.6,1.1c-0.1,0.4-0.2,0.9-0.2,1.4c0,0.5,0.1,1,0.3,1.4c0.2,0.4,0.5,0.8,0.8,1.2c0.3,0.3,0.7,0.6,1.2,0.8			        c0.4,0.2,0.9,0.3,1.4,0.3s1-0.1,1.4-0.3c0.4-0.2,0.8-0.5,1.2-0.8c0.3-0.3,0.6-0.7,0.8-1.2c0.2-0.4,0.3-0.9,0.3-1.4			        c0-0.5-0.1-1-0.2-1.4c-0.1-0.4-0.3-0.8-0.6-1.1c-0.2-0.3-0.5-0.6-0.8-0.8c-0.3-0.2-0.7-0.3-1-0.3V147.2z"/>
+                  </g>
+                  <circle fill="#FFFFFF" cx="36.6" cy="141.1" r="3.1"/> </g>
+                <g>
+                  <g>
+                    <path fill="#FFFFFF" d="M28.8,223.4c0.8,0,1.4,0.6,1.4,1.4c0,0.8-0.6,1.4-1.4,1.4l-15.2,2c-1.9,0-3.5-1.5-3.5-3.5
+			        c0-1.9,1.5-3.5,3.5-3.5L28.8,223.4z"/>
+                    <ellipse fill="#FFFFFF" cx="34.5" cy="224.8" rx="2.6" ry="2.6"/>
+                  </g>
+                  <path fill="#FFFFFF" d="M37.1,211.3c3.1,3.4,5,7.9,5,12.9c0,10.5-8.5,19.1-19.1,19.1c-10.5,0-19.1-8.5-19.1-19.1
+			    c0-5,1.9-9.5,5-12.9c-0.8-1.1-1.5-2.3-2-3.6c-4.3,4.2-7,10-7,16.5c0,12.7,10.3,23.1,23.1,23.1c12.7,0,23.1-10.3,23.1-23.1			    c0-6.5-2.7-12.3-7-16.5C38.6,208.9,37.9,210.1,37.1,211.3z"/>
+                </g> </g> </g> </svg> </a>
+        <div class="quickaccess">
+          <div class="quickaccess-box quickaccess-box-horaires">
+            <!-- Quickaccess Horaires -->
+            <div class="panel panel-quickaccess panel-quickaccess-horaires">
+              <div class="panel-heading panel-quickaccess-heading"> <a href="https://www.reseau-astuce.fr/#quickaccess-horaires"
+
+                  class="item-with-img panel-quickaccess-link" data-toggle="collapse"
+
+                  data-parent="#panel-quickaccess" id="ui-collapse-194" role="tab"
+
+                  aria-selected="true" aria-expanded="true" aria-controls="quickaccess-horaires">
+                  <span aria-hidden="true" class="item-img tcar-icons tcar-hour"></span>
+                  <span class="item-text no-decoration">Horaires</span> </a> </div>
+              <div id="quickaccess-horaires" class="panel-collapse collapse in"
+
+                data-panel-closed-mobile="true" data-panel-open-desktop="true" role="tabpanel"
+
+                aria-labelledby="ui-collapse-194" aria-hidden="false">
+                <div class="panel-body">
+                  <div class="bold quickaccess-label">
+                    <h2><span style="color: #010101;">Bienvenue sur le site
+                        dédié à la sobriété numérique</span></h2>
+                    <br />
+                    Ce site à été développé par le groupe"Ingénieur(e)s
+                    pédagogique" du Master 2 IME 2023-2024.</div>
+                  <div class="bold quickaccess-label"><br />
+                  </div>
+                  <div class="bold quickaccess-label">Pour commencer, veuillez
+                    sélectionner une catégorie dans la barre ci-dessus.<br />
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
     </main>
-    <footer>
-        <!-- Footer content here -->
-    </footer>
-</body>
+    <footer class="footer" role="contentinfo" id="footer">
+      <div class="footer-top">
+        <div class="footer-top-container container">
+          <div class="text-center text-uppercase"><span class="footer-social-label hidden-sm hidden-xs">Site
+              Développé par Kévin LEJUEZ avec la collaboration d'Intissar Bamou,
+              Wiem Chakroun et Nathan MAIgret</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
